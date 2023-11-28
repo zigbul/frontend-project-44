@@ -50,6 +50,17 @@ const printGameOver = () => {
 
 const getGcd = (a, b) => ((a % b) ? getGcd(b, a % b) : Math.abs(b));
 
+const makeArray = (firstNumber = 1, step = 1) => {
+    const arr = [];
+    const length = Math.floor((Math.random() * 5) + 6);
+
+    for (let i = 0; i < length; i++) {
+        arr.push(firstNumber + (step * i));
+    }
+
+    return arr;
+};
+
 //main functions
 export const greeting = () => {
     console.log('Welcome to the Brain Games!');
@@ -112,7 +123,27 @@ export const gcdGame = () => {
         const firstNumber = randomizer(maxRandomNumber);
         const secondNumber = randomizer(maxRandomNumber);
         const result = getGcd(firstNumber, secondNumber);
+
         askQuestion(`${firstNumber} and ${secondNumber}`);
+        compareResult(userAnswer, result.toString());
+    }
+
+    printGameOver();
+}
+
+export const progressionGame = () => {
+    console.log('What number is missing in the progression?');
+
+    while(userPointsCounter < userMaxPoints) {
+        const firstNumber = Math.floor(Math.random() * 4);
+        const step = Math.floor(Math.random() * 10);
+        const numbers = makeArray(firstNumber, step);
+        const swapSymbol = '...';
+        const randomIndex = randomizer(numbers.length);
+        const result = numbers[randomIndex];
+        numbers[randomIndex] = swapSymbol;
+
+        askQuestion(numbers.join(' '));
         compareResult(userAnswer, result.toString());
     }
 
