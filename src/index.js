@@ -39,13 +39,13 @@ const endGame = () => {
     console.log(`Congratulations, ${userName}!`);
 }
 
-//main functions
 export const greeting = () => {
     console.log('Welcome to the Brain Games!');
-    userName = readlineSync.question('May I have your name?');
+    userName = readlineSync.question('May I have your name? ');
     console.log(`Hello, ${userName}`);
 }
 
+//main functions
 export const evenGame = () => {
     console.log(`Answer "${positiveAnswer}" if the number is even. otherwise answer "${negativeAnswer}"`);
 
@@ -68,7 +68,6 @@ export const evenGame = () => {
         } else if (isWrong) {
             isActive = false;
             printWrong(userAnswer, result);
-            console.log(`"${userAnswer}" is wrong answer ;(. Correct answer was "${result}"`);
         }
 
         if (userPointsCounter === userMaxPoints) {
@@ -78,10 +77,10 @@ export const evenGame = () => {
 }
 
 export const calcGame = () => {
-    console.log("What is the result of the expression?");
+    console.log("What is the result of the expression? ");
 
     while(isActive) {
-        const operation = operations[andomizer(3)];
+        const operation = operations[randomizer(3)];
         const firstNumber = randomizer(maxRandomNumber);
         const secondNumber = randomizer(maxRandomNumber);
         let result = 0;
@@ -103,7 +102,7 @@ export const calcGame = () => {
                 break;
         }
 
-        const isCorrect = result === userAnswer;
+        const isCorrect = result.toString() === userAnswer;
 
         if (isCorrect) {
             userPointsCounter += 1;
@@ -111,7 +110,7 @@ export const calcGame = () => {
         }
         else {
             isActive = false;
-            console.log(`"${userAnswer}" is wrong answer ;(. Correct answer was "${result}"`);
+            printWrong(userAnswer, result);
         }
 
         if (userPointsCounter === userMaxPoints) {
