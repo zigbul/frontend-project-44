@@ -3,4 +3,5 @@
 
 <a href="https://codeclimate.com/github/zigbul/frontend-project-44/maintainability"><img src="https://api.codeclimate.com/v1/badges/d3d8f68ac6409433f547/maintainability" /></a>
 
-https://asciinema.org/a/A29sljXGCa7IjR9sr6jEmq0PD
+https://asciinema.org/a/A29sljXGCa7IjR9sr6jEmq0PD - brain-even-game
+https://asciinema.org/a/DlGZSWYYzZItxVNz6mD54kQac - brain-calc-game
