@@ -48,6 +48,8 @@ const printGameOver = () => {
     console.log(`Congratulations, ${userName}!`);
 }
 
+const getGcd = (a, b) => ((a % b) ? getGcd(b, a % b) : Math.abs(b));
+
 //main functions
 export const greeting = () => {
     console.log('Welcome to the Brain Games!');
@@ -97,6 +99,20 @@ export const calcGame = () => {
                 break;
         }
 
+        compareResult(userAnswer, result.toString());
+    }
+
+    printGameOver();
+}
+
+export const gcdGame = () => {
+    console.log('Find the greatest common divisor of given numbers.');
+
+    while(userPointsCounter < userMaxPoints) {
+        const firstNumber = randomizer(maxRandomNumber);
+        const secondNumber = randomizer(maxRandomNumber);
+        const result = getGcd(firstNumber, secondNumber);
+        askQuestion(`${firstNumber} and ${secondNumber}`);
         compareResult(userAnswer, result.toString());
     }
 
