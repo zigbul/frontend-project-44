@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import evenGame, { greeting } from "../src/evenGame.js";
+import { evenGame, greeting } from "../src";
 
 greeting();
 evenGame();
