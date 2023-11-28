@@ -6,3 +6,4 @@
 https://asciinema.org/a/A29sljXGCa7IjR9sr6jEmq0PD - brain-even-game
 https://asciinema.org/a/DlGZSWYYzZItxVNz6mD54kQac - brain-calc-game
 https://asciinema.org/a/zDrp9QnSnoEDhmI0YLPixjx86 - brain-gcd-game
+https://asciinema.org/a/M3XKHF5SIK44SrTNjBRlp7RSU - brain-progression-game
