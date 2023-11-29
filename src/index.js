@@ -61,6 +61,18 @@ const makeArray = (firstNumber = 1, step = 1) => {
     return arr;
 };
 
+const isNumberPrime = (number) => {
+    if (number < 2) return false;
+
+    for (let i = 2; i <= number / 2; i++) {
+        if (number % i === 0) {
+            return false;
+        }
+    }
+
+    return true;
+};
+
 //main functions
 export const greeting = () => {
     console.log('Welcome to the Brain Games!');
@@ -145,6 +157,20 @@ export const progressionGame = () => {
 
         askQuestion(numbers.join(' '));
         compareResult(userAnswer, result.toString());
+    }
+
+    printGameOver();
+}
+
+export const primeGame = () => {
+    console.log(`Answer "${positiveAnswer}" if given number is prime. Otherwise answer "${negativeAnswer}".`);
+
+    while(userPointsCounter < userMaxPoints) {
+        const number = randomizer(maxRandomNumber);
+        const result = isNumberPrime(number) ? 'yes' : 'no';
+
+        askQuestion(number);
+        compareResult(userAnswer, result);
     }
 
     printGameOver();
