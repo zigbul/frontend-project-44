@@ -10,7 +10,7 @@ brain-gcd-game
 brain-progression-game
 [![asciicast](https://asciinema.org/a/M3XKHF5SIK44SrTNjBRlp7RSU.svg)](https://asciinema.org/a/M3XKHF5SIK44SrTNjBRlp7RSU)
 
-https://asciinema.org/a/59WidGyOFs4rIBzoichXyP3DA - brain-prime-game
+brain-prime-game
 [![asciicast](https://asciinema.org/a/59WidGyOFs4rIBzoichXyP3DA.svg)](https://asciinema.org/a/59WidGyOFs4rIBzoichXyP3DA)
 
 ### Hexlet tests and linter status:

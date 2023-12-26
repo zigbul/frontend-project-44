@@ -1,4 +1,5 @@
 import readlineSync from 'readline-sync';
+import { getRandomInRange } from './utils.js';
 
 //general options
 let userPointsCounter = 0;
@@ -16,10 +17,6 @@ const negativeAnswer = 'no';
 const operations = ['+', '-', '*'];
 
 //helpers
-const randomizer = (gap = 1) => {
-    return Math.floor(Math.random() * gap);
-}
-
 const askQuestion = (question) => {
     console.log(`Question: ${question}`);
     userAnswer = readlineSync.question('Your answer: ');
@@ -52,7 +49,7 @@ const getGcd = (a, b) => ((a % b) ? getGcd(b, a % b) : Math.abs(b));
 
 const makeArray = (firstNumber = 1, step = 1) => {
     const arr = [];
-    const length = Math.floor((Math.random() * 5) + 6);
+    const length = getRandomInRange(5, 10);
 
     for (let i = 0; i < length; i++) {
         arr.push(firstNumber + (step * i));
@@ -84,7 +81,7 @@ export const evenGame = () => {
     console.log(`Answer "${positiveAnswer}" if the number is even. otherwise answer "${negativeAnswer}"`);
 
     while(userPointsCounter < userMaxPoints) {
-        const randomNumber = randomizer(maxRandomNumber);
+        const randomNumber = getRandomInRange();
         askQuestion(randomNumber);
 
         const isEven = randomNumber % evenDevider === 0 
@@ -100,9 +97,9 @@ export const calcGame = () => {
     console.log("What is the result of the expression? ");
 
     while(userPointsCounter < userMaxPoints) {
-        const operation = operations[randomizer(3)];
-        const firstNumber = randomizer(maxRandomNumber);
-        const secondNumber = randomizer(maxRandomNumber);
+        const operation = operations[getRandomInRange(0, 2)];
+        const firstNumber = getRandomInRange();
+        const secondNumber = getRandomInRange();
         let result = 0;
 
         switch(operation) {
@@ -132,8 +129,8 @@ export const gcdGame = () => {
     console.log('Find the greatest common divisor of given numbers.');
 
     while(userPointsCounter < userMaxPoints) {
-        const firstNumber = randomizer(maxRandomNumber);
-        const secondNumber = randomizer(maxRandomNumber);
+        const firstNumber = getRandomInRange();
+        const secondNumber = getRandomInRange();
         const result = getGcd(firstNumber, secondNumber);
 
         askQuestion(`${firstNumber} and ${secondNumber}`);
@@ -147,11 +144,11 @@ export const progressionGame = () => {
     console.log('What number is missing in the progression?');
 
     while(userPointsCounter < userMaxPoints) {
-        const firstNumber = Math.floor(Math.random() * 4);
-        const step = Math.floor(Math.random() * 10);
+        const firstNumber = getRandomInRange(0, 4);
+        const step = getRandomInRange(2, 10);
         const numbers = makeArray(firstNumber, step);
         const swapSymbol = '...';
-        const randomIndex = randomizer(numbers.length);
+        const randomIndex = getRandomInRange(0, numbers.length - 1);
         const result = numbers[randomIndex];
         numbers[randomIndex] = swapSymbol;
 
@@ -166,7 +163,7 @@ export const primeGame = () => {
     console.log(`Answer "${positiveAnswer}" if given number is prime. Otherwise answer "${negativeAnswer}".`);
 
     while(userPointsCounter < userMaxPoints) {
-        const number = randomizer(maxRandomNumber);
+        const number = getRandomInRange();
         const result = isNumberPrime(number) ? 'yes' : 'no';
 
         askQuestion(number);
