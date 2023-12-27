@@ -6,11 +6,11 @@
 ## **Описание проекта:**
 
 Проект состоит иp 5-ти математических мини-игр:
-1.[Brain Even][1]
-2.Brain Calc
-3.Brain Gcd
-4.Brain Progression
-5.Brain Prime
+  1.**Brain Even**
+  2.**Brain Calc**
+  3.**Brain Gcd**
+  4.**Brain Progression**
+  5.**Brain Prime**
 
 ## **Установка:**
 
@@ -20,7 +20,7 @@ make install
 
 ## **Описание игр:**
 
-### [1]**Brain Even**
+### **Brain Even**
 
 "Проверка на чётность".
 Суть игры в следующем: пользователю показывается случайное число.
@@ -35,6 +35,11 @@ Your answer: yes
 ```
 #### _Видео_
 [![asciicast](https://asciinema.org/a/A29sljXGCa7IjR9sr6jEmq0PD.svg)](https://asciinema.org/a/A29sljXGCa7IjR9sr6jEmq0PD)
+
+#### _Запуск_
+```
+brain-even
+```
 ___
 
 ## **Brain Calc**
@@ -60,6 +65,11 @@ Congratulations, Sam!
 ```
 #### _Видео_
 [![asciicast](https://asciinema.org/a/DlGZSWYYzZItxVNz6mD54kQac.svg)](https://asciinema.org/a/DlGZSWYYzZItxVNz6mD54kQac)
+
+#### _Запуск_
+```
+brain-calc
+```
 ___
 
 ## Brain GCD
@@ -85,6 +95,11 @@ Congratulations, Sam!
 ```
 #### _Видео_
 [![asciicast](https://asciinema.org/a/zDrp9QnSnoEDhmI0YLPixjx86.svg)](https://asciinema.org/a/zDrp9QnSnoEDhmI0YLPixjx86)
+
+#### _Запуск_
+```
+brain-gcd
+```
 ___
 
 ## Brain Progression
@@ -109,6 +124,11 @@ Congratulations, Sam!
 ```
 #### _Видео_
 [![asciicast](https://asciinema.org/a/M3XKHF5SIK44SrTNjBRlp7RSU.svg)](https://asciinema.org/a/M3XKHF5SIK44SrTNjBRlp7RSU)
+
+#### _Запуск_
+```
+brain-progression
+```
 ___
 
 ## Brain Prime
@@ -127,6 +147,11 @@ Correct!
 ```
 #### _Видео_
 [![asciicast](https://asciinema.org/a/59WidGyOFs4rIBzoichXyP3DA.svg)](https://asciinema.org/a/59WidGyOFs4rIBzoichXyP3DA)
+
+#### _Запуск_
+```
+brain-prime
+```
 ___
 
 ### Hexlet tests and linter status:
