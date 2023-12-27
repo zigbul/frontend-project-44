@@ -6,11 +6,11 @@
 ## **Описание проекта:**
 
 Проект состоит иp 5-ти математических мини-игр:
-  1.**Brain Even**
-  2.**Brain Calc**
-  3.**Brain Gcd**
-  4.**Brain Progression**
-  5.**Brain Prime**
+  +**Brain Even**
+  +**Brain Calc**
+  +**Brain Gcd**
+  +**Brain Progression**
+  +**Brain Prime**
 
 ## **Установка:**
 
