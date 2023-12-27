@@ -6,11 +6,11 @@
 ## **Описание проекта:**
 
 Проект состоит иp 5-ти математических мини-игр:
-  +**Brain Even**
-  +**Brain Calc**
-  +**Brain Gcd**
-  +**Brain Progression**
-  +**Brain Prime**
+1. [**Brain Even**][1]
+2. **Brain Calc**
+3. **Brain Gcd**
+4. **Brain Progression**
+5. **Brain Prime**
 
 ## **Установка:**
 
@@ -20,7 +20,7 @@ make install
 
 ## **Описание игр:**
 
-### **Brain Even**
+### [1] **Brain Even**
 
 "Проверка на чётность".
 Суть игры в следующем: пользователю показывается случайное число.
