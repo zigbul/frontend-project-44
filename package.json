@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "Набор из нескольких консольных игр",
   "type": "module",
-  "author": "",
   "license": "ISC",
   "bin": {
     "brain-games": "bin/brain-games.js",
