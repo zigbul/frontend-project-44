@@ -3,28 +3,28 @@
     <img src="https://api.codeclimate.com/v1/badges/d3d8f68ac6409433f547/maintainability" />
 </a>
 
-## **Описание проекта:**
+## **Project description**
 
-Проект состоит из 5-ти математических мини-игр:
+The project consists of 5 mathematical mini-games:
 1. **Brain Even**
 2. **Brain Calc**
 3. **Brain Gcd**
 4. **Brain Progression**
 5. **Brain Prime**
 
-## **Установка:**
+## **Installing:**
 
 ```
 make install
 ```
 
-## **Описание игр:**
+## **Games description**
 
 ### **Brain Even**
 
-"Проверка на чётность".
-Суть игры в следующем: пользователю показывается случайное число.
-И ему нужно ответить "yes" , если число чётное, или "no" — если нечётное.
+"Parity check".
+The essence of the game is this: the user is shown a random number.
+And he needs to answer “yes” if the number is even, or “no” if it is odd.
 ```
 Welcome to the Brain Games!
 May I have your name? Bill
@@ -33,10 +33,10 @@ Answer "yes" if the number is even, otherwise answer "no".
 Question: 15
 Your answer: yes
 ```
-#### _Видео_
+#### _Video_
 [![asciicast](https://asciinema.org/a/A29sljXGCa7IjR9sr6jEmq0PD.svg)](https://asciinema.org/a/A29sljXGCa7IjR9sr6jEmq0PD)
 
-#### _Запуск_
+#### _Launch_
 ```
 brain-even
 ```
@@ -44,9 +44,9 @@ ___
 
 ## **Brain Calc**
 
-"Калькулятор".
-Суть игры в следующем: пользователю показывается случайное математическое выражение,
-например "35 + 16", которое нужно вычислить и записать правильный ответ.
+"Calculator".
+The essence of the game is as follows: the user is shown a random mathematical expression,
+for example "35 + 16", which needs to be calculated and the correct answer written down.
 ```
 Welcome to the Brain Games!
 May I have your name? Sam
@@ -63,10 +63,10 @@ Your answer: 175
 Correct!
 Congratulations, Sam!
 ```
-#### _Видео_
+#### _Video_
 [![asciicast](https://asciinema.org/a/DlGZSWYYzZItxVNz6mD54kQac.svg)](https://asciinema.org/a/DlGZSWYYzZItxVNz6mD54kQac)
 
-#### _Запуск_
+#### _Launch_
 ```
 brain-calc
 ```
@@ -74,9 +74,9 @@ ___
 
 ## Brain GCD
 
-"Наибольший общий делитель (НОД)".
-Суть игры в следующем: пользователю показывается два случайных числа, например, 25 50.
-Пользователь должен вычислить и ввести наибольший общий делитель этих чисел.
+"Greatest Common Divisor (GCD)".
+The essence of the game is as follows: the user is shown two random numbers, for example, 25 50.
+The user must calculate and enter the greatest common divisor of these numbers.
 ```
 Welcome to the Brain Games!
 May I have your name? Sam
@@ -93,10 +93,10 @@ Your answer: 3
 Correct!
 Congratulations, Sam!
 ```
-#### _Видео_
+#### _Video_
 [![asciicast](https://asciinema.org/a/zDrp9QnSnoEDhmI0YLPixjx86.svg)](https://asciinema.org/a/zDrp9QnSnoEDhmI0YLPixjx86)
 
-#### _Запуск_
+#### _Launch_
 ```
 brain-gcd
 ```
@@ -104,8 +104,8 @@ ___
 
 ## Brain Progression
 
-Игра показываем игроку ряд чисел, образующий арифметическую прогрессию, 
-заменив любое из чисел тремя точками. Игрок должен определить это число.
+The game shows the player a series of numbers forming an arithmetic progression,
+replacing any of the numbers with three dots. The player must determine this number.
 ```
 Welcome to the Brain Games!
 May I have your name? Sam
@@ -122,10 +122,10 @@ Your answer: 59
 Correct!
 Congratulations, Sam!
 ```
-#### _Видео_
+#### _Video_
 [![asciicast](https://asciinema.org/a/M3XKHF5SIK44SrTNjBRlp7RSU.svg)](https://asciinema.org/a/M3XKHF5SIK44SrTNjBRlp7RSU)
 
-#### _Запуск_
+#### _Launch_
 ```
 brain-progression
 ```
@@ -133,9 +133,9 @@ ___
 
 ## Brain Prime
 
-"Простое ли число"
-"Игроку на экран выводится число, нужно ответь "yes", если оно простое,
-или "no", если нет.
+"Is it a prime number"
+“The player is shown a number on the screen, you need to answer “yes” if it is simple,
+or "no" if not.
 ```
 Welcome to the Brain Games!
 May I have your name? Sam
@@ -145,10 +145,10 @@ Question: 7
 Your answer: yes
 Correct!
 ```
-#### _Видео_
+#### _Video_
 [![asciicast](https://asciinema.org/a/59WidGyOFs4rIBzoichXyP3DA.svg)](https://asciinema.org/a/59WidGyOFs4rIBzoichXyP3DA)
 
-#### _Запуск_
+#### _Launch_
 ```
 brain-prime
 ```
