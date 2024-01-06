@@ -18,7 +18,7 @@ const generateRound = () => {
 
     const progression = makeProgression(firstNumber, step);
 
-    const swapSymbol = '...';
+    const swapSymbol = '..';
     const randomIndex = getRandomInRange(0, progression.length - 1);
     const answer = progression[randomIndex];
     progression[randomIndex] = swapSymbol;
