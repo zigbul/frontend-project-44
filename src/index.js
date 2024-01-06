@@ -13,10 +13,10 @@ const runEngine = (rules, generateRound) => {
     for (let i = 0; i < roundsCount; i++) {
         const [question, answer] = generateRound();
 
-        console.log(question);
+        console.log(`Question: ${question}`);
         const userAnswer = readlineSync.question('Answer: ');
 
-        if (answer === userAnswer) {
+        if (answer.toString() === userAnswer) {
             console.log('Correct!');
         } else {
             console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${answer}'.
