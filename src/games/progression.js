@@ -1,22 +1,22 @@
 import { getRandomInRange } from "../utils.js";
 import runEngine from "../index.js";
 
-const makeProgression = (firstNumber = 1, step = 1) => {
-    const arr = [];
-    const length = getRandomInRange(5, 10);
+const makeProgression = (firstNumber = 0, step = 2, length = 5) => {
+    const progression = [];
     
     for (let i = 0; i < length; i++) {
-        arr.push(firstNumber + (step * i));
+        progression.push(firstNumber + (step * i));
     }
     
-    return arr;
+    return progression;
 };
 
 const generateRound = () => {
     const firstNumber = getRandomInRange(0, 4);
     const step = getRandomInRange(2, 10);
+    const length = getRandomInRange(5, 10);
 
-    const progression = makeProgression(firstNumber, step);
+    const progression = makeProgression(firstNumber, step, length);
 
     const swapSymbol = '..';
     const randomIndex = getRandomInRange(0, progression.length - 1);
