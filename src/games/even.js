@@ -2,14 +2,14 @@ import { getRandomInRange } from "../utils.js";
 import runEngine from "../index.js";
 
 const isEven = (num) => {
-    return num % 2 === 0 ? "yes" : "no";
+    return num % 2 === 0;
 };
 
 const generateRound = () => {
     const number = getRandomInRange();
 
     const question = `${number}`;
-    const answer = isEven(number);
+    const answer = isEven(number) ? "yes" : "no";
 
     return [question, answer];
 };
