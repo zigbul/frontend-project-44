@@ -13,6 +13,6 @@ const generateRound = () => {
 };
 
 export default () => {
-    const rules = 'Answer "yes" if the number is even, otherwise answer "no".';
-    runEngine(rules, generateRound);
+  const rules = 'Answer "yes" if the number is even, otherwise answer "no".';
+  runEngine(rules, generateRound);
 };

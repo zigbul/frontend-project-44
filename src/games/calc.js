@@ -2,12 +2,12 @@ import getRandomInRange from '../utils.js';
 import runEngine from '../index.js';
 
 const getRandomOperator = () => {
-  const operators = ['+', '-', '*']
-  return operators[getRandomInRange(0, operators.length - 1)]
+  const operators = ['+', '-', '*'];
+  return operators[getRandomInRange(0, operators.length - 1)];
 };
 
-const calculation = (num1, num2, operator) => { 
-  switch (operator) { 
+const calculation = (num1, num2, operator) => {
+  switch (operator) {
     case '+':
       return num1 + num2;
     case '-':
