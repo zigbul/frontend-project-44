@@ -1,4 +1,4 @@
-import { getRandomInRange } from '../utils.js';
+import getRandomInRange from '../utils.js';
 import runEngine from '../index.js';
 
 const makeProgression = (firstNumber = 0, step = 2, length = 5) => {
